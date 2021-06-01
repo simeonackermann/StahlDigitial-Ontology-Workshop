@@ -1,0 +1,358 @@
+@prefix : <http://webprotege.stanford.edu/project/9CnzMWxI80XJontLfNsZvY#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://webprotege.stanford.edu/project/9CnzMWxI80XJontLfNsZvY> .
+
+<http://webprotege.stanford.edu/project/9CnzMWxI80XJontLfNsZvY> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> ;
+                                                         rdfs:range <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> ;
+                                                         rdfs:comment "Every pizza shall have a base..."^^xsd:string ;
+                                                         rdfs:label "hasBase" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> ;
+                                                            rdfs:range <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> ;
+                                                            rdfs:comment "Toppings of a pizza"^^xsd:string ;
+                                                            rdfs:label "hasTopping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/useBakingProcess
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useBakingProcess> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                  rdfs:range <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> ;
+                                                                  rdfs:comment "Pizza uses a specific baking process"^^xsd:string ;
+                                                                  rdfs:label "useBakingProcess"^^xsd:string .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/useStove
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useStove> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> ;
+                                                          rdfs:range <https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> ;
+                                                          rdfs:comment "Baking process uses a specific stove"^^xsd:string ;
+                                                          rdfs:label "useStove" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/duration
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf owl:topDataProperty ;
+                                                          rdfs:domain <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> ;
+                                                          rdfs:comment "Duration of a baking process"@en ;
+                                                          rdfs:label "duration"^^xsd:string .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/heatMethod
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/heatMethod> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:subPropertyOf owl:topDataProperty ;
+                                                            rdfs:domain <https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> ;
+                                                            rdfs:comment "Heat method for the used stove. Might be \"Circulation\""@en ;
+                                                            rdfs:label "heatMethod"^^xsd:string .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/state
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/state> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> ,
+                                                                   <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> ,
+                                                                   <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> ;
+                                                       rdfs:comment "State (might be \"Raw\", \"Well done\" or \"Burnt\") of a pizza, base or topping, before or after baking process"@en ;
+                                                       rdfs:label "state"^^xsd:string .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> ;
+                                                             rdfs:comment "Temperature for the used stove"@en ;
+                                                             rdfs:label "temperature"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/AnanasTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/AnanasTopping> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> ;
+                                                               rdfs:label "Ananas Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> rdf:type owl:Class ;
+                                                               rdfs:label "Baking Process" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> ;
+                                                               rdfs:label "Cheese Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/Food
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Food> rdf:type owl:Class ;
+                                                      rdfs:label "Food" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/FruttiDiMare
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/FruttiDiMare> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> ,
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> ;
+                                                                                owl:someValuesFrom <https://stahl.matdig.uni-leipzig.de/pizza-demo/MixedSeafoodTopping>
+                                                                              ] ,
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> ;
+                                                                                owl:someValuesFrom <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping>
+                                                                              ] ;
+                                                              rdfs:label "Frutti Di Mare" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/HamTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/HamTopping> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/MeatTopping> ;
+                                                            rdfs:label "Ham Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/Margherita
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Margherita> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> ;
+                                                                              owl:someValuesFrom <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase>
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> ;
+                                                                              owl:someValuesFrom <https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping>
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> ;
+                                                                              owl:someValuesFrom <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping>
+                                                                            ] ;
+                                                            rdfs:label "Margherita" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MeatTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MeatTopping> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> ;
+                                                             rdfs:label "Meat Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MixedSeafoodTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MixedSeafoodTopping> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> ;
+                                                                     rdfs:label "Mixed Seafood Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MozzarellaTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MozzarellaTopping> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> ;
+                                                                   rdfs:label "Mozzarella Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MushroomTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MushroomTopping> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> ;
+                                                                 rdfs:label "Mushroom Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/OliveTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/OliveTopping> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> ;
+                                                              rdfs:label "Olive Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/OnionTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/OnionTopping> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> ;
+                                                              rdfs:label "Onion Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/Food> ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> ;
+                                                                         owl:someValuesFrom <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase>
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> ;
+                                                                         owl:someValuesFrom <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping>
+                                                                       ] ;
+                                                       rdfs:comment "Our named pizzas"@en ;
+                                                       rdfs:label "Pizza"^^xsd:string .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/Food> ;
+                                                           rdfs:label "Pizza Base" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaSalami
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaSalami> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> ;
+                                                                               owl:someValuesFrom <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase>
+                                                                             ] ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> ;
+                                                                               owl:someValuesFrom <https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping>
+                                                                             ] ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> ;
+                                                                               owl:someValuesFrom <https://stahl.matdig.uni-leipzig.de/pizza-demo/SalamiTopping>
+                                                                             ] ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> ;
+                                                                               owl:someValuesFrom <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping>
+                                                                             ] ;
+                                                             rdfs:label "Pizza Salami" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/Food> ;
+                                                              rdfs:label "Pizza Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/SalamiTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/SalamiTopping> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/MeatTopping> ;
+                                                               rdfs:label "Salami Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/SpinachTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/SpinachTopping> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> ;
+                                                                rdfs:label "Spinach Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> ;
+                                                       rdfs:label "Stove" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> ;
+                                                               rdfs:label "Tomato Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> ;
+                                                                  rdfs:label "Vegetable Topping" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnt
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnt> rdf:type owl:NamedIndividual ;
+                                                                 <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBase> ;
+                                                                 <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntCheeseTopping> ,
+                                                                                                                             <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntTomatoTopping> ;
+                                                                 <https://stahl.matdig.uni-leipzig.de/pizza-demo/useBakingProcess> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingProcess> ;
+                                                                 rdfs:label "Margherita Burnt" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingProcess
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingProcess> rdf:type owl:NamedIndividual ,
+                                                                                       <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> ;
+                                                                              <https://stahl.matdig.uni-leipzig.de/pizza-demo/useStove> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntStove> ;
+                                                                              <https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> 20 ;
+                                                                              rdfs:label "Margherita Burnt Baking Process" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBase
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBase> rdf:type owl:NamedIndividual ,
+                                                                              <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> ;
+                                                                     <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> "Burnt, black, too crispy"^^xsd:string ;
+                                                                     rdfs:label "Margherita Burnt Base" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntCheeseTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntCheeseTopping> rdf:type owl:NamedIndividual ,
+                                                                                       <https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping> ;
+                                                                              <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> "Burnt"^^xsd:string ;
+                                                                              rdfs:label "Margherita Burnt Cheese Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntStove
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntStove> rdf:type owl:NamedIndividual ,
+                                                                               <https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> ;
+                                                                      <https://stahl.matdig.uni-leipzig.de/pizza-demo/heatMethod> "Circulation"^^xsd:string ;
+                                                                      <https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature> 250 ;
+                                                                      rdfs:label "Margherita Burnt Stove" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntTomatoTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntTomatoTopping> rdf:type owl:NamedIndividual ,
+                                                                                       <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> ;
+                                                                              <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> "Burnt and overcooked"^^xsd:string ;
+                                                                              rdfs:label "Margherita Burnt Tomato Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDone
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDone> rdf:type owl:NamedIndividual ;
+                                                                    <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBase> ;
+                                                                    <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneCheeseTopping> ,
+                                                                                                                                <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTomateTopping> ;
+                                                                    <https://stahl.matdig.uni-leipzig.de/pizza-demo/useBakingProcess> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBakingProcess> ;
+                                                                    rdfs:label "Margherita Well Done"^^xsd:string .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBakingProcess
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBakingProcess> rdf:type owl:NamedIndividual ,
+                                                                                          <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> ;
+                                                                                 <https://stahl.matdig.uni-leipzig.de/pizza-demo/useStove> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneStove> ;
+                                                                                 <https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> 10 ;
+                                                                                 rdfs:label "Margherita Well Done Baking Process" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBase
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBase> rdf:type owl:NamedIndividual ,
+                                                                                 <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> ;
+                                                                        <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> "Well Done"^^xsd:string ;
+                                                                        rdfs:label "Margherita Well Done Base" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneCheeseTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneCheeseTopping> rdf:type owl:NamedIndividual ,
+                                                                                          <https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping> ;
+                                                                                 <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> "Well Done"^^xsd:string ;
+                                                                                 rdfs:label "Margherita Well Done Cheese Topping" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneStove
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneStove> rdf:type owl:NamedIndividual ,
+                                                                                  <https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> ;
+                                                                         <https://stahl.matdig.uni-leipzig.de/pizza-demo/heatMethod> "Circulation"^^xsd:string ;
+                                                                         <https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature> 250 ;
+                                                                         rdfs:label "Margherita Well Done Stove" .
+
+
+###  https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTomateTopping
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTomateTopping> rdf:type owl:NamedIndividual ,
+                                                                                          <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> ;
+                                                                                 <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> "Well Done"^^xsd:string ;
+                                                                                 rdfs:label "Margherita Well Done TomateTopping" .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
