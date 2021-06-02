@@ -1,0 +1,361 @@
+<http://webprotege.stanford.edu/project/9CnzMWxI80XJontLfNsZvY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> <http://www.w3.org/2000/01/rdf-schema#range> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> <http://www.w3.org/2000/01/rdf-schema#comment> "Every pizza shall have a base..."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> <http://www.w3.org/2000/01/rdf-schema#label> "hasBase" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <http://www.w3.org/2000/01/rdf-schema#range> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <http://www.w3.org/2000/01/rdf-schema#comment> "Toppings of a pizza"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <http://www.w3.org/2000/01/rdf-schema#label> "hasTopping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/unit> <http://www.w3.org/2000/01/rdf-schema#range> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Unit> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/unit> <http://purl.org/dc/elements/1.1/description> "A reference to the unit of measure of a quantity (variable or constant) of interest."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/unit> <http://www.w3.org/2000/01/rdf-schema#label> "unit" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useBakingProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useBakingProcess> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useBakingProcess> <http://www.w3.org/2000/01/rdf-schema#range> <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useBakingProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Pizza uses a specific baking process"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useBakingProcess> <http://www.w3.org/2000/01/rdf-schema#label> "useBakingProcess"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useDuration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useDuration> <http://www.w3.org/2000/01/rdf-schema#range> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Quantity> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useDuration> <http://www.w3.org/2000/01/rdf-schema#label> "useDuration" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useStove> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useStove> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useStove> <http://www.w3.org/2000/01/rdf-schema#range> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useStove> <http://www.w3.org/2000/01/rdf-schema#comment> "Baking process uses a specific stove"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useStove> <http://www.w3.org/2000/01/rdf-schema#label> "useStove" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useTemperature> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useTemperature> <http://www.w3.org/2000/01/rdf-schema#range> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Quantity> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/useTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "useTemperature" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/heatMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/heatMethod> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/heatMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/heatMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Heat method for the used stove. Might be \"Circulation\""@en .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/heatMethod> <http://www.w3.org/2000/01/rdf-schema#label> "heatMethod"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/value> <http://www.w3.org/2000/01/rdf-schema#label> "value" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/AnanasTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/AnanasTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/AnanasTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Ananas Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Baking Process" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Burnt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Burnt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/State> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/HamTopping> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MozzarellaTopping> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/OliveTopping> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Capricciosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Capricciosa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Capricciosa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Capricciosa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Capricciosa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Capricciosa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Capricciosa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Capricciosa> <http://www.w3.org/2000/01/rdf-schema#label> "Capricciosa" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Cheese Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/DegreeCelsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/DegreeCelsius> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Unit> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/DegreeCelsius> <http://www.w3.org/2000/01/rdf-schema#label> "Degree Celsius" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Food> <http://www.w3.org/2000/01/rdf-schema#label> "Food" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MixedSeafoodTopping> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/FruttiDiMare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/FruttiDiMare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/FruttiDiMare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/FruttiDiMare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/FruttiDiMare> <http://www.w3.org/2000/01/rdf-schema#label> "Frutti Di Mare" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/HamTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/HamTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MeatTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/HamTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Ham Topping" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Margherita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Margherita> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Margherita> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Margherita> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Margherita> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Margherita> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MeatTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MeatTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MeatTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Meat Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Minute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Minute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Unit> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Minute> <http://www.w3.org/2000/01/rdf-schema#label> "Minute" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MixedSeafoodTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MixedSeafoodTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MixedSeafoodTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Mixed Seafood Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MozzarellaTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MozzarellaTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MozzarellaTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Mozzarella Topping" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MozzarellaTopping> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MushroomTopping> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Mushroom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Mushroom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Mushroom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Mushroom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Mushroom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Mushroom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Mushroom> <http://www.w3.org/2000/01/rdf-schema#label> "Mushroom" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MushroomTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MushroomTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MushroomTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Mushroom Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/OliveTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/OliveTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/OliveTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Olive Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/OnionTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/OnionTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/OnionTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Onion Topping" .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Food> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> <http://www.w3.org/2000/01/rdf-schema#label> "Pizza"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Food> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> <http://www.w3.org/2000/01/rdf-schema#label> "Pizza Base" .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/SalamiTopping> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaSalami> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaSalami> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Pizza> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaSalami> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaSalami> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaSalami> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaSalami> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaSalami> <http://www.w3.org/2000/01/rdf-schema#label> "Pizza Salami" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Food> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Pizza Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/QUDTConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/QUDTConcept> <http://purl.org/dc/elements/1.1/description> "The root class for all QUDT concepts."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/QUDTConcept> <http://www.w3.org/2000/01/rdf-schema#label> "QUDT Concept" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Quantity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/QUDTConcept> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Quantity> <http://purl.org/dc/elements/1.1/description> "A quantity is the measurement of an observable property of a particular object, event, or physical system. A quantity is always associated with the context of measurement (i.e. the thing measured, the measured value, the accuracy of measurement, etc.) whereas the underlying quantity kind is independent of any particular measurement. Thus, length is a quantity kind while the height of a rocket is a specific quantity of length; its magnitude that may be expressed in meters, feet, inches, etc. Examples of physical quantities include physical constants, such as the speed of light in a vacuum, Planck's constant, the electric permittivity of free space, and the fine structure constant.\n\nIn other words, quantities are quantifiable aspects of the world, such as the duration of a movie, the distance between two points, velocity of a car, the pressure of the atmosphere, and a person's weight; and units are used to describe their numerical measure.\n\nMany quantity kinds are related to each other by various physical laws, and as a result, the associated units of some quantity kinds can be expressed as products (or ratios) of powers of other quantity kinds (e.g., momentum is mass times velocity and velocity is defined as distance divided by time). In this way, some quantities can be calculated from other measured quantities using their associations to the quantity kinds in these expressions. These quantity kind relationships are also discussed in dimensional analysis. Those that cannot be so expressed can be regarded as \"fundamental\" in this sense.\n\nA quantity is distinguished from a \"quantity kind\" in that the former carries a value and the latter is a type specifier."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Quantity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://qudt.org/schema/qudt/Quantity> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Quantity> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Raw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Raw> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/State> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Raw> <http://www.w3.org/2000/01/rdf-schema#label> "Raw" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/SalamiTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/SalamiTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MeatTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/SalamiTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Salami Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/SpinachTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/SpinachTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/SpinachTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Spinach Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/QUDTConcept> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/State> <http://www.w3.org/2000/01/rdf-schema#label> "State" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> <http://www.w3.org/2000/01/rdf-schema#label> "Stove" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Tomato Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/QUDTConcept> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Unit> <http://purl.org/dc/elements/1.1/description> "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Unit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://qudt.org/schema/qudt/Unit> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetable Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/WellDone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/WellDone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stahl.matdig.uni-leipzig.de/pizza-demo/State> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Burnt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Burnt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/State> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/BurntToastedTomatos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/BurntToastedTomatos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/State> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/BurntToastedTomatos> <http://www.w3.org/2000/01/rdf-schema#label> "Burnt toasted tomatos" .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/unit> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/DegreeCelsius> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnStoveTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnStoveTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Quantity> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnStoveTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid21 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnStoveTemperature> <https://stahl.matdig.uni-leipzig.de/pizza-demo/value> "250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnStoveTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Burnt Stove Temperature"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnt> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBase> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnt> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntCheeseTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnt> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntTomatoTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnt> <https://stahl.matdig.uni-leipzig.de/pizza-demo/useBakingProcess> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingProcess> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnt> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Burnt" .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/unit> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Minute> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Quantity> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid22 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingDuration> <https://stahl.matdig.uni-leipzig.de/pizza-demo/value> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingDuration> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Burnt Baking Duration" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingProcess> <https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingDuration> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingProcess> <https://stahl.matdig.uni-leipzig.de/pizza-demo/useStove> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntStove> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBakingProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Burnt Baking Process" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBase> <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <https://stahl.matdig.uni-leipzig.de/pizza-demo/RoastedBurntBase> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntBase> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Burnt Base" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntCheeseTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntCheeseTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntCheeseTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Burnt> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntCheeseTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Burnt Cheese Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntStove> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntStove> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntStove> <https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurnStoveTemperature> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntStove> <https://stahl.matdig.uni-leipzig.de/pizza-demo/heatMethod> "Circulation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntStove> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Burnt Stove" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntTomatoTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntTomatoTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntTomatoTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <https://stahl.matdig.uni-leipzig.de/pizza-demo/BurntToastedTomatos> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaBurntTomatoTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Burnt Tomato Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRAW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRAW> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MarghertitaRAWBase> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRAW> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRawCheeseTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRAW> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRawTomateTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRAW> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Raw"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRawCheeseTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRawCheeseTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRawCheeseTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> "Raw"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRawCheeseTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Raw Cheese Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRawTomateTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRawTomateTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/VegetableTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRawTomateTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> "Raw"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaRawTomateTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Raw Tomate Topping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDone> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasBase> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBase> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDone> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneCheeseTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDone> <https://stahl.matdig.uni-leipzig.de/pizza-demo/hasTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTomateTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDone> <https://stahl.matdig.uni-leipzig.de/pizza-demo/useBakingProcess> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBakingProcess> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDone> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Well Done"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBakingProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBakingProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/BakingProcess> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBakingProcess> <https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneDuration> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBakingProcess> <https://stahl.matdig.uni-leipzig.de/pizza-demo/useStove> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneStove> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBakingProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Well Done Baking Process" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBase> <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <https://stahl.matdig.uni-leipzig.de/pizza-demo/WellDone> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneBase> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Well Done Base" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneCheeseTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneCheeseTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/CheeseTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneCheeseTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <https://stahl.matdig.uni-leipzig.de/pizza-demo/WellDone> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneCheeseTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Well Done Cheese Topping" .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/unit> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Minute> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Quantity> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid23 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneDuration> <https://stahl.matdig.uni-leipzig.de/pizza-demo/value> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneDuration> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Well Done Duration" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneStove> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneStove> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Stove> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneStove> <https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature> <https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTemperature> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneStove> <https://stahl.matdig.uni-leipzig.de/pizza-demo/heatMethod> "Circulation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneStove> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Well Done Stove" .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://stahl.matdig.uni-leipzig.de/pizza-demo/unit> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://stahl.matdig.uni-leipzig.de/pizza-demo/DegreeCelsius> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/Quantity> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid24 .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTemperature> <https://stahl.matdig.uni-leipzig.de/pizza-demo/value> "250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Well Done Stove Temperature"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTomateTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTomateTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/TomatoTopping> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTomateTopping> <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <https://stahl.matdig.uni-leipzig.de/pizza-demo/WellDone> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MargheritaWellDoneTomateTopping> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Well Done TomateTopping" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MarghertitaRAWBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MarghertitaRAWBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/PizzaBase> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MarghertitaRAWBase> <https://stahl.matdig.uni-leipzig.de/pizza-demo/state> "Raw"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/MarghertitaRAWBase> <http://www.w3.org/2000/01/rdf-schema#label> "Margherita Raw Base"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/RoastedBurntBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/RoastedBurntBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/State> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/RoastedBurntBase> <http://www.w3.org/2000/01/rdf-schema#label> "Roasted burnt base" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/WellDone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/WellDone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stahl.matdig.uni-leipzig.de/pizza-demo/WellDone> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Burnt> <http://purl.org/dc/elements/1.1/description> "Ingredient is burnt"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/Burnt> <http://www.w3.org/2000/01/rdf-schema#label> "Burnt" .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/WellDone> <http://purl.org/dc/elements/1.1/description> "Ingredient is well done"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/WellDone> <http://www.w3.org/2000/01/rdf-schema#label> "Well Done Ingredient"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> <http://www.w3.org/2000/01/rdf-schema#label> "duration"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/duration> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of a baking process"@en .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <http://www.w3.org/2000/01/rdf-schema#label> "state"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/state> <http://www.w3.org/2000/01/rdf-schema#comment> "State (might be \"Raw\", \"Well done\" or \"Burnt\") of a pizza, base or topping, before or after baking process"@en .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature for the used stove"@en .
+<https://stahl.matdig.uni-leipzig.de/pizza-demo/temperature> <http://www.w3.org/2000/01/rdf-schema#label> "temperature"^^<http://www.w3.org/2001/XMLSchema#string> .
